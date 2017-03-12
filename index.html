@@ -35,6 +35,11 @@
         width: 85rem;
         margin: 0 auto;
     }
+    @media only screen and (max-width: 1280px) {
+        .container {
+            width: 100%;
+        }
+    }
     .row{
         padding: 0 .75rem;
         width: 100%;
@@ -62,6 +67,31 @@
         display: flex;
         align-items: center;
     }
+    .navbar-main-button{
+        background: none;
+        font-size: 90%;
+        font-weight: 500;
+        color: #fff;
+        text-transform: uppercase;
+        border: 0;
+        padding: 0;
+        vertical-align: 10px;
+        cursor: pointer;
+    }
+
+    .navbar-main-button-icon{
+        font-size: 2em;
+        font-style: normal;
+        padding-right: 10px;
+    }
+
+    .navbar-main-button-icon:before{
+        content: "\2630 ";
+    }
+
+    .navbar-main-button span{
+        vertical-align: 4px;
+    }
     </style>
 </head>
 <body>
@@ -69,7 +99,9 @@
         <div class="header-navbar-globocom"></div>
         <div class="header-navbar-main">
             <div class="container">
-                <div class="row"></div>
+                <div class="row">
+                    <button class="navbar-main-button"><i class="navbar-main-button-icon"></i><span>menu</span></button>
+                </div>
             </div>
         </div>
     </header>
