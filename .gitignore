@@ -87,3 +87,7 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+#Folder .idea/ ----- Entender para que sever esta pasta
+.idea/
+.idea/
