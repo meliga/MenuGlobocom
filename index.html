@@ -107,25 +107,22 @@
         vertical-align: 4px;
     }
 
-    /* Resolver problemas com a BORDER e BOX-SHADOW */
-
     .navbar-main-content{
         position: absolute;
         max-height: 490px;
         margin-left: -11px;
+        background: #ffffff;
+        box-shadow: 0 0 10px rgba(0,0,0,.5);
+        -moz-box-shadow: 0 0 10px rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 10px rgba(0,0,0,.5);
+        -o-box-shadow: 0 0 10px rgba(0,0,0,.5);
         border-radius: 3px;
         -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        box-shadow: 0 0 10px rgba(0,0,0,.5);
-        border-collapse: collapse;
         transition: opacity 300ms ease-out;
         opacity: 0;
-        /*overflow: hidden;*/
         display: block;
         z-index: 9999;
     }
-
-    /* ---------------------- */
 
     .navbar-main-content:before{
         position: absolute;
@@ -143,10 +140,8 @@
     .navbar-main:hover > .navbar-main-content{
         opacity: 1;
     }
-
     .navbar-main-cascade{
         min-width: 200px;
-        background: red;
         overflow: hidden;
         float: left;
         transition: width 300ms ease-out;
@@ -156,7 +151,6 @@
         box-shadow: inset -6px 0px 10px -6px rgba(100,100,100,0.4);
         padding: 20px 0 30px;
         z-index: 1;
-        background: #fff;
         height: 433px;
         width: 200px;
         line-height: 27px;
