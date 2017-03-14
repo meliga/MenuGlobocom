@@ -31,9 +31,9 @@
 
     /* Container and Rows */
     .container{
-        padding: 0 .75rem;
         width: 85rem;
         margin: 0 auto;
+        padding: 0 .75rem;
     }
 
     .row{
@@ -53,9 +53,9 @@
 
     .header-navbar-globocom{
         position: relative;
-        background-color: #f3f3f3;
         height: 35px;
         width: 100%;
+        background-color: #f3f3f3;
     }
 
     .header-navbar-main{
@@ -81,28 +81,15 @@
         display: inline-block;
     }
 
-    .navbar-main-content{
-        position: absolute;
-        margin-left: -11px;
-        display: block;
-        z-index: 9999;
-        opacity: 0;
-        transition: opacity 300ms ease-out;
-    }
-
-    .navbar-main:hover > .navbar-main-content{
-        opacity: 1;
-    }
-
     .navbar-main-button{
         background: none;
         font-size: 90%;
         font-weight: 500;
         color: #fff;
-        text-transform: uppercase;
         border: 0;
         padding: 0;
         vertical-align: 10px;
+        text-transform: uppercase;
         cursor: pointer;
     }
 
@@ -118,6 +105,31 @@
 
     .navbar-main-button span{
         vertical-align: 4px;
+    }
+
+    .navbar-main-content{
+        position: absolute;
+        margin-left: -11px;
+        display: block;
+        opacity: 0;
+        transition: opacity 300ms ease-out;
+        z-index: 9999;
+    }
+    .navbar-main-content:before{
+        position: absolute;
+        height: 0;
+        width: 0;
+        left: 13px;
+        top: -11px;
+        border-bottom: 11px solid #fff;
+        border-left: 11px solid transparent;
+        border-right: 11px solid transparent;
+        content: " ";
+        z-index: 1;
+    }
+    /* show navbar content */
+    .navbar-main:hover > .navbar-main-content{
+        opacity: 1;
     }
 
     /* products globo.com */
