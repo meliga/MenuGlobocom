@@ -59,7 +59,6 @@
 
     .header-navbar-main{
         position: relative;
-        background-color: #C4170C;
         height: 52px;
         width: 100%;
         display: -webkit-flex; /* Safari */
@@ -67,6 +66,24 @@
         display: flex;
         align-items: center;
     }
+
+    .navbar-main{
+        display: inline-block;
+    }
+
+    .navbar-main-content{
+        position: absolute;
+        margin-left: -11px;
+        display: block;
+        z-index: 9999;
+        opacity: 0;
+        transition: opacity 300ms ease-out;
+    }
+
+    .navbar-main:hover > .navbar-main-content{
+        opacity: 1;
+    }
+
     .navbar-main-button{
         background: none;
         font-size: 90%;
@@ -92,15 +109,26 @@
     .navbar-main-button span{
         vertical-align: 4px;
     }
+
+    /* products globo.com */
+    .g1{
+        background-color: #C4170C;
+    }
+
     </style>
 </head>
 <body>
     <header>
         <div class="header-navbar-globocom"></div>
-        <div class="header-navbar-main">
+        <div class="header-navbar-main g1">
             <div class="container">
                 <div class="row">
-                    <button class="navbar-main-button"><i class="navbar-main-button-icon"></i><span>menu</span></button>
+                    <nav class="navbar-main">
+                        <button class="navbar-main-button"><i class="navbar-main-button-icon"></i><span>menu</span></button>
+                        <div class="navbar-main-content">
+
+                        </div>
+                    </nav>
                 </div>
             </div>
         </div>
