@@ -169,14 +169,16 @@
     }
 
     /* ul li */
-    .navbar-main-list-item{
+    .navbar-main-list-item,
+    .navbar-main-sublist-item{
         color: #515151;
         border-left: 3px solid transparent;
         padding-left: 20px;
 
     }
 
-    .navbar-main-list-item:hover {
+    .navbar-main-list-item:hover,
+    .navbar-main-sublist-item:hover{
         color: #C4170C;
         background: #fff;
         border-left: 3px solid #C4170C;
@@ -205,10 +207,6 @@
     }
 
     /* ul li a */
-    .navbar-main-list-item .list-item-link{
-
-    }
-
     .dropdown .list-item-link,
     .default .list-item-link{
         cursor: context-menu;
@@ -220,7 +218,6 @@
     }
 
     /* ul li a > div */
-
     .navbar-main-sublist-content{
         position: absolute;
         width: 100%;
@@ -246,6 +243,12 @@
         padding-left: 23px;
     }
 
+    /* ul li a > div ul */
+    .navbar-main-sublist{
+        line-height: 25px;
+    }
+
+
     /* products globo.com */
     .g1{
         background-color: #C4170C;
@@ -268,6 +271,9 @@
                                         <a class="list-item-link">editorias</a>
                                         <div class="navbar-main-sublist-content">
                                             <h3 class="navbar-main-sublist-title">editoriais</h3>
+                                            <ul class="navbar-main-sublist">
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">agro</a></li>
+                                            </ul>
                                         </div>
                                     </li>
                                     <li class="navbar-main-list-item default"><a href="#" class="list-item-link">vídeos</a></li>
