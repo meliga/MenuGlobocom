@@ -13,6 +13,11 @@
             list-style:none;
             vertical-align:baseline;
         }
+        body{
+            font-family: 'Open Sans', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            font-size: 1em;
+        }
 
         ul {
             margin: 0;
@@ -140,12 +145,15 @@
     .navbar-main:hover > .navbar-main-content{
         opacity: 1;
     }
+    
     .navbar-main-cascade{
         min-width: 200px;
-        overflow: hidden;
+        /*overflow: hidden;*/
         float: left;
         transition: width 300ms ease-out;
     }
+
+    /* ul */
     .navbar-main-list{
         position: relative;
         box-shadow: inset -6px 0px 10px -6px rgba(100,100,100,0.4);
@@ -157,6 +165,45 @@
         font-size: 90%;
         color: #666;
     }
+
+    /* ul li */
+    .navbar-main-list-item{
+        padding-left: 20px;
+        border-left: 3px solid transparent;
+        color: #515151;
+    }
+
+    .navbar-main-list-item:hover {
+        border-left: 3px solid #C4170C;
+        background: #fff;
+        color: #C4170C;
+    }
+
+    .dropdown:hover{
+        background: #f5f5f5;
+    }
+
+    .dropdown:hover:after {
+        position: absolute;
+        content: "";
+        left: 100%;
+        z-index: 9999;
+        border-top: 14px solid transparent;
+        border-left: 14px solid #f5f5f5;
+        border-bottom: 14px solid transparent;
+        margin-left: -1px;
+        margin-top: -28px;
+    }
+
+    /* ul li a */
+    .dropdown .list-item-link{
+        cursor: context-menu;
+    }
+
+    .list-item-link{
+        display: block;
+    }
+
     /* products globo.com */
     .g1{
         background-color: #C4170C;
@@ -175,7 +222,9 @@
                         <div class="navbar-main-content">
                             <div class="navbar-main-cascade">
                                 <ul class="navbar-main-list">
-                                    <li class="navbar-main-list-item"></li>
+                                    <li class="navbar-main-list-item dropdown">
+                                        <a class="list-item-link">editorias</a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
