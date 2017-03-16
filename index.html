@@ -150,7 +150,7 @@
     }
 
     .navbar-main-cascade{
-        min-width: 600px; /* esse valor deve iniciar em 200px */
+        min-width: 800px; /* esse valor deve iniciar em 200px */
         float: left;
         overflow: hidden;
         transition: width 300ms ease-out;
@@ -232,7 +232,9 @@
         padding: 20px 0 30px;
         display: block; /* Esse valor deve iniciar como 'none' */
     }
-
+    .double{
+        min-width: 200%;
+    }
     /* ul li a > div h3 */
     .navbar-main-sublist-title{
         font-size: 1em;
@@ -258,6 +260,14 @@
         margin-top: 0px;
     }
 
+    .navbar-main-sublist-item .navbar-main-sublist-content{
+        display: none;
+    }
+
+    .navbar-main-sublist-item:hover .navbar-main-sublist-content{
+        display: block;
+    }
+
     /* ul li a > div ul li a i*/
     .icon-arrow-left{
         color: #C4170C;
@@ -271,12 +281,29 @@
         font-style: normal;
     }
 
+    /* ul li a > div ul li a > div ul */
+    .sublevel{
+        display: inline;
+        float: left;
+    }
+
+    .double ul.sublevel:nth-child(n+3){
+        margin-left: 20px;
+    }
+
     /* ul li a > div ul li a > div ul li*/
     .sublevel .navbar-main-sublist-item{
         font-size: 85%;
         font-weight: bold
     }
 
+    .sublevel .highlighted{
+        font-weight: normal;
+        color: #515151;
+    }
+    .sublevel .highlighted:hover{
+        background: transparent;
+    }
 
     /* products globo.com */
     .g1{
@@ -321,6 +348,22 @@
                                                 </li>
                                                 <li class="navbar-main-sublist-item dropdown">
                                                     <a href="" class="sublist-item-link">nordeste <i class="icon-arrow-left"></i></a>
+                                                </li>
+                                                <li class="navbar-main-sublist-item dropdown">
+                                                    <a href="" class="sublist-item-link">sudeste <i class="icon-arrow-left"></i></a>
+                                                    <div class="navbar-main-sublist-content double">
+                                                        <h3 class="navbar-main-sublist-title">sudeste</h3>
+                                                        <ul class="navbar-main-sublist sublevel">
+                                                            <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">espirito santo</a></li>
+                                                            <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">minas gerais</a></li>
+                                                            <li class="navbar-main-sublist-item highlighted"><a href="" class="sublist-item-link">belo horizonte e região</a></li>
+                                                            <li class="navbar-main-sublist-item highlighted"><a href="" class="sublist-item-link">zona da mata</a></li>
+                                                            <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">rio de janeiro</a></li>
+                                                        </ul>
+                                                        <ul class="navbar-main-sublist sublevel">
+                                                            <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">são paulo</a></li>
+                                                        </ul>
+                                                    </div>
                                                 </li>
                                             </ul>
                                         </div>
