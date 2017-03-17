@@ -219,9 +219,14 @@
     /* ul li a */
     .dropdown .list-item-link,
     .default .list-item-link{
+
+        font-weight: 600;
+    }
+
+    .dropdown .list-item-link,
+    .dropdown .sublist-item-link{
         cursor: default;
         pointer-events: none;
-        font-weight: 600;
     }
 
     .list-item-link,
@@ -307,6 +312,11 @@
     .sublevel .navbar-main-sublist-item{
         font-size: 85%;
         font-weight: bold
+    }
+
+    .sublevel  .navbar-main-sublist-item .sublist-item-link{
+        cursor: pointer;
+        pointer-events: auto;
     }
 
     .sublevel .highlighted{
