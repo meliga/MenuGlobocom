@@ -126,7 +126,7 @@
         border-radius: 3px;
         -webkit-border-radius: 3px;
         transition: opacity 300ms ease-out;
-        opacity: 1; /* esse valor deverá ser zero */
+        opacity: 0; /* esse valor deverá ser zero */
         display: block;
         z-index: 9999;
 
@@ -150,7 +150,7 @@
     }
 
     .navbar-main-cascade{
-        min-width: 800px; /* esse valor deve iniciar em 200px */
+        min-width: 200px; /* esse valor deve iniciar em 200px */
         float: left;
         overflow: hidden;
         transition: width 300ms ease-out;
@@ -246,7 +246,7 @@
         margin-left: 0;
         border-left: 1px solid #ddd;
         padding: 20px 0 30px;
-        display: block; /* Esse valor deve iniciar como 'none' */
+        display: none; /* Esse valor deve iniciar como 'none' */
     }
 
     .multi-column{
@@ -341,6 +341,16 @@
         background-color: #C4170C;
     }
 
+    /* Menu Map */
+    .navmap{
+        background: #f5f5f5;
+        border-left: 1px solid #ddd;
+        float: left;
+        transition: width 300ms ease-out;
+        height: 433px;
+        padding: 27px 25px 23px;
+        width: 265px;
+    }
     </style>
 </head>
 <body>
@@ -415,12 +425,17 @@
                                     <li class="navbar-main-list-item highlighted"><a href="#" class="list-item-link">febre amarela</a></li>
                                 </ul>
                             </div>
+                            <div class="navmap">
+                                <h3 class="navbar-main-list-title">notícias da sua região</h3>
+                            </div>
                         </div>
                     </nav>
                 </div>
             </div>
         </div>
     </header>
+    <script type="text/javascript">
 
+    </script>
 </body>
 </html>
