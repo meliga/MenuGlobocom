@@ -219,7 +219,6 @@
     /* ul li a */
     .dropdown .list-item-link,
     .default .list-item-link{
-
         font-weight: 600;
     }
 
@@ -248,9 +247,11 @@
         padding: 20px 0 30px;
         display: block; /* Esse valor deve iniciar como 'none' */
     }
-    .double{
+
+    .multi-column{
         min-width: 200%;
     }
+
     /* ul li a > div h3 */
     .navbar-main-list-title,
     .navbar-main-sublist-title{
@@ -304,12 +305,12 @@
         float: left;
     }
 
-    .double ul.sublevel:nth-child(n+3){
+    .multi-column ul.sublevel:nth-child(n+3){
         margin-left: 20px;
     }
 
     /* ul li a > div ul li a > div ul li*/
-    .sublevel .navbar-main-sublist-item{
+    .navbar-main-sublist-item .navbar-main-sublist-item{
         font-size: 85%;
         font-weight: bold
     }
@@ -317,6 +318,7 @@
     .sublevel  .navbar-main-sublist-item .sublist-item-link{
         cursor: pointer;
         pointer-events: auto;
+        display: block;
     }
 
     .sublevel .highlighted{
@@ -374,7 +376,7 @@
                                                 </li>
                                                 <li class="navbar-main-sublist-item dropdown">
                                                     <a class="sublist-item-link">sudeste <i class="icon-arrow-left"></i></a>
-                                                    <div class="navbar-main-sublist-content double">
+                                                    <div class="navbar-main-sublist-content multi-column">
                                                         <h3 class="navbar-main-sublist-title">sudeste</h3>
                                                         <ul class="navbar-main-sublist sublevel">
                                                             <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">espirito santo</a></li>
@@ -388,6 +390,18 @@
                                                         </ul>
                                                     </div>
                                                 </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="navbar-main-list-item dropdown">
+                                        <a href="#" class="list-item-link">blogs & colunas</a>
+                                        <div class="navbar-main-list-content multi-column">
+                                            <h3 class="navbar-main-list-title">blogs & colunas</h3>
+                                            <ul class="navbar-main-sublist sublevel">
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">altieres rohr</a></li>
+                                            </ul>
+                                            <ul class="navbar-main-sublist sublevel">
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">gerson camarotti</a></li>
                                             </ul>
                                         </div>
                                     </li>
