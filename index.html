@@ -199,16 +199,24 @@
         background: #f5f5f5;
     }
 
-    .dropdown:hover:after {
-        position: absolute;
-        content: "";
-        left: 100%;
-        margin-left: -1px;
-        margin-top: -28px;
-        border-top: 14px solid transparent;
-        border-left: 14px solid #f5f5f5;
-        border-bottom: 14px solid transparent;
-        z-index: 9999;
+    .dropdown:hover:after,
+    .dropdown:hover:before{
+             position: absolute;
+             content: "";
+             left: 100%;
+             margin-left: -1px;
+             margin-top: -28px;
+             border-top: 14px solid transparent;
+             border-left: 14px solid #f5f5f5;
+             border-bottom: 14px solid transparent;
+             z-index: 9999;
+         }
+
+    .dropdown:hover:before {
+        margin-top: -2px;
+        border-top: 15px solid transparent;
+        border-left: 15px solid #ddd;
+        border-bottom: 15px solid transparent;
     }
 
     .highlighted{
@@ -370,6 +378,20 @@
                                             <h3 class="navbar-main-list-title">editoriais</h3>
                                             <ul class="navbar-main-sublist sublevel">
                                                 <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">agro</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">carros</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">ciência e saúde</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">concursos e emprego</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">economia</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">educação</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">esporte</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">mundo</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">música</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">natureza</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">planeta bizarro</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">política</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">pop & arte</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">tecnologia e games</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">turismo e viagem</a></li>
                                             </ul>
                                         </div>
                                     </li>
@@ -384,28 +406,132 @@
                                                         <h3 class="navbar-main-sublist-title">centro-oeste</h3>
                                                         <ul class="navbar-main-sublist sublevel">
                                                             <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">distrito federal</a></li>
+                                                            <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">goiás</a></li>
+                                                            <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">mato grosso</a></li>
+                                                            <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">mato grosso do sul</a></li>
                                                         </ul>
                                                     </div>
                                                 </li>
                                                 <li class="navbar-main-sublist-item dropdown">
                                                     <a class="sublist-item-link">nordeste <i class="icon-arrow-left"></i></a>
+                                                    <div class="navbar-main-sublist-content">
+                                                        <h3 class="navbar-main-sublist-title">nordeste</h3>
+                                                        <ul class="navbar-main-sublist sublevel">
+                                                            <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">alagoas</a></li>
+                                                            <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">bahia</a></li>
+                                                            <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">ceará</a></li>
+                                                            <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">maranhão</a></li>
+                                                            <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">paraíba</a></li>
+                                                            <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">pernambuco</a></li>
+                                                            <li class="navbar-main-sublist-item highlighted"><a href="" class="sublist-item-link">recife e região</a></li>
+                                                            <li class="navbar-main-sublist-item highlighted"><a href="" class="sublist-item-link">caruaru e região</a></li>
+                                                            <li class="navbar-main-sublist-item highlighted"><a href="" class="sublist-item-link">petrolina e região</a></li>
+                                                            <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">piauí</a></li>
+                                                            <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">rio grande do norte</a></li>
+                                                            <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">sergipe</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="navbar-main-sublist-item dropdown">
+                                                    <a class="sublist-item-link">norte <i class="icon-arrow-left"></i></a>
+                                                    <div class="navbar-main-sublist-content">
+                                                        <h3 class="navbar-main-sublist-title">norte</h3>
+                                                        <ul class="navbar-main-sublist sublevel">
+                                                            <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">acre</a></li>
+                                                            <li class="navbar-main-sublist-item highlighted"><a href="" class="sublist-item-link">cruzeiro do sul e região</a></li>
+                                                            <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">amapá</a></li>
+                                                            <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">amazonas</a></li>
+                                                            <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">pará</a></li>
+                                                            <li class="navbar-main-sublist-item highlighted"><a href="" class="sublist-item-link">belém e região</a></li>
+                                                            <li class="navbar-main-sublist-item highlighted"><a href="" class="sublist-item-link">santarém e região</a></li>
+                                                            <li class="navbar-main-sublist-item highlighted"><a href="" class="sublist-item-link">rondônia</a></li>
+                                                            <li class="navbar-main-sublist-item highlighted"><a href="" class="sublist-item-link">ariquemes e vale do jamari</a></li>
+                                                            <li class="navbar-main-sublist-item highlighted"><a href="" class="sublist-item-link">cacoal e zona da mata</a></li>
+                                                            <li class="navbar-main-sublist-item highlighted"><a href="" class="sublist-item-link">ji paraná e região central</a></li>
+                                                            <li class="navbar-main-sublist-item highlighted"><a href="" class="sublist-item-link">porto velho e região</a></li>
+                                                            <li class="navbar-main-sublist-item highlighted"><a href="" class="sublist-item-link">vilhena e cone sul</a></li>
+                                                            <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">roraima</a></li>
+                                                            <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">tocantins</a></li>
+                                                        </ul>
+                                                    </div>
                                                 </li>
                                                 <li class="navbar-main-sublist-item dropdown dropdown-multi-column">
                                                     <a class="sublist-item-link">sudeste <i class="icon-arrow-left"></i></a>
                                                     <div class="navbar-main-sublist-content multi-column">
                                                         <h3 class="navbar-main-sublist-title">sudeste</h3>
                                                         <ul class="navbar-main-sublist sublevel">
-                                                            <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">espirito santo</a></li>
+                                                            <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">espírito santo</a></li>
                                                             <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">minas gerais</a></li>
                                                             <li class="navbar-main-sublist-item highlighted"><a href="" class="sublist-item-link">belo horizonte e região</a></li>
+                                                            <li class="navbar-main-sublist-item highlighted"><a href="" class="sublist-item-link">centro-oeste</a></li>
+                                                            <li class="navbar-main-sublist-item highlighted"><a href="" class="sublist-item-link">grande minas</a></li>
+                                                            <li class="navbar-main-sublist-item highlighted"><a href="" class="sublist-item-link">sul de minas</a></li>
+                                                            <li class="navbar-main-sublist-item highlighted"><a href="" class="sublist-item-link">triângulo mineiro</a></li>
+                                                            <li class="navbar-main-sublist-item highlighted"><a href="" class="sublist-item-link">vales de minas gerais</a></li>
                                                             <li class="navbar-main-sublist-item highlighted"><a href="" class="sublist-item-link">zona da mata</a></li>
                                                             <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">rio de janeiro</a></li>
+                                                            <li class="navbar-main-sublist-item highlighted"><a href="" class="sublist-item-link">rio de janeiro e região</a></li>
+                                                            <li class="navbar-main-sublist-item highlighted"><a href="" class="sublist-item-link">norte fluminense</a></li>
+                                                            <li class="navbar-main-sublist-item highlighted"><a href="" class="sublist-item-link">região dos lagos</a></li>
+                                                            <li class="navbar-main-sublist-item highlighted"><a href="" class="sublist-item-link">região serrana</a></li>
+                                                            <li class="navbar-main-sublist-item highlighted"><a href="" class="sublist-item-link">sul e costa verde</a></li>
                                                         </ul>
                                                         <ul class="navbar-main-sublist sublevel">
                                                             <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">são paulo</a></li>
+                                                            <li class="navbar-main-sublist-item highlighted"><a href="" class="sublist-item-link">são paulo e região</a></li>
+                                                            <li class="navbar-main-sublist-item highlighted"><a href="" class="sublist-item-link">bauru e marília</a></li>
+                                                            <li class="navbar-main-sublist-item highlighted"><a href="" class="sublist-item-link">campinas e região</a></li>
+                                                            <li class="navbar-main-sublist-item highlighted"><a href="" class="sublist-item-link">itapetininga e região</a></li>
+                                                            <li class="navbar-main-sublist-item highlighted"><a href="" class="sublist-item-link">mogi das cruzes e suzano</a></li>
+                                                            <li class="navbar-main-sublist-item highlighted"><a href="" class="sublist-item-link">piracicaba e região</a></li>
+                                                            <li class="navbar-main-sublist-item highlighted"><a href="" class="sublist-item-link">prudente e região</a></li>
+                                                            <li class="navbar-main-sublist-item highlighted"><a href="" class="sublist-item-link">ribeirão preto e franca</a></li>
+                                                            <li class="navbar-main-sublist-item highlighted"><a href="" class="sublist-item-link">rio preto e araçatuba</a></li>
+                                                            <li class="navbar-main-sublist-item highlighted"><a href="" class="sublist-item-link">santos e região</a></li>
+                                                            <li class="navbar-main-sublist-item highlighted"><a href="" class="sublist-item-link">são carlos e araraquara</a></li>
+                                                            <li class="navbar-main-sublist-item highlighted"><a href="" class="sublist-item-link">sorocaba e jundiaí</a></li>
+                                                            <li class="navbar-main-sublist-item highlighted"><a href="" class="sublist-item-link">vale do paraíba e região</a></li>
                                                         </ul>
                                                     </div>
                                                 </li>
+                                                <li class="navbar-main-sublist-item dropdown">
+                                                    <a class="sublist-item-link">sul <i class="icon-arrow-left"></i></a>
+                                                    <div class="navbar-main-sublist-content multi-column">
+                                                        <h3 class="navbar-main-sublist-title">sul</h3>
+                                                        <ul class="navbar-main-sublist sublevel">
+                                                            <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">paraná</a></li>
+                                                            <li class="navbar-main-sublist-item highlighted"><a href="" class="sublist-item-link">curitiba e região</a></li>
+                                                            <li class="navbar-main-sublist-item highlighted"><a href="" class="sublist-item-link">campos gerais e sul</a></li>
+                                                            <li class="navbar-main-sublist-item highlighted"><a href="" class="sublist-item-link">norte e noroeste</a></li>
+                                                            <li class="navbar-main-sublist-item highlighted"><a href="" class="sublist-item-link">oeste e sudoeste</a></li>
+                                                            <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">rio grande do sul</a></li>
+                                                            <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">santa catarina</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="navbar-main-list-item dropdown">
+                                        <a href="#" class="list-item-link">na tv</a>
+                                        <div class="navbar-main-list-content">
+                                            <h3 class="navbar-main-list-title">na tv</h3>
+                                            <ul class="navbar-main-sublist">
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">autoesporte</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">bem estar</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">bom dia brasil</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">como será?</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">fantástico</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">globo repórter</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">globo rural</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">globonews</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">hora 1</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">jornal da globo</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">jornal hoje</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">jornal nacional</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">pequenas empresas</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">profissão repórter</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">retrospectiva 2016</a></li>
                                             </ul>
                                         </div>
                                     </li>
@@ -415,14 +541,77 @@
                                             <h3 class="navbar-main-list-title">blogs & colunas</h3>
                                             <ul class="navbar-main-sublist sublevel">
                                                 <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">altieres rohr</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">amelia gonzalez</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">ana escobar</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">andré trigueiro</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">andrea ramal</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">andréia sadi</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">antônio carlos miguel</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">blog de fã-clube</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">cássio barbosa</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">cláudia croitor</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">cristiana lôbo</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">denis marum</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">dodô azevedo</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">geneton moraes neto</a></li>
                                             </ul>
                                             <ul class="navbar-main-sublist sublevel">
                                                 <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">gerson camarotti</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">helio gurovitz</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">lia salgado</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">luciano trigo</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">mariza tavares</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">matheus leitão</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">mauro ferreira</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">ronaldo prass</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">samy dana</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">start.up</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">thais herédia</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">yvonne maggie</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">zeca camargo</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="navbar-main-list-item dropdown">
+                                        <a href="#" class="list-item-link">serviços</a>
+                                        <div class="navbar-main-list-content">
+                                            <h3 class="navbar-main-list-title">serviços</h3>
+                                            <ul class="navbar-main-sublist">
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">agenda de shows</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">downloads</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">fale conosco</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">g1 no seu celular</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">app g1 enem</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">indicadores financeiros</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">índices de mercado</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">loterias</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">previsão do tempo</a></li>
+                                                <li class="navbar-main-sublist-item"><a href="" class="sublist-item-link">tabela fipe</a></li>
+                                                <li class="navbar-main-sublist-item dropdown">
+                                                    <a class="sublist-item-link">trânsito <i class="icon-arrow-left"></i></a>
+                                                    <div class="navbar-main-sublist-content multi-column">
+                                                        <h3 class="navbar-main-sublist-title">trânsito</h3>
+                                                        <ul class="navbar-main-sublist sublevel">
+                                                            <li class="navbar-main-sublist-item highlighted"><a href="" class="sublist-item-link">belo horizonte</a></li>
+                                                            <li class="navbar-main-sublist-item highlighted"><a href="" class="sublist-item-link">brasília</a></li>
+                                                            <li class="navbar-main-sublist-item highlighted"><a href="" class="sublist-item-link">pernambuco</a></li>
+                                                            <li class="navbar-main-sublist-item highlighted"><a href="" class="sublist-item-link">rio de janeiro</a></li>
+                                                            <li class="navbar-main-sublist-item highlighted"><a href="" class="sublist-item-link">são paulo</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
                                             </ul>
                                         </div>
                                     </li>
                                     <li class="navbar-main-list-item default"><a href="#" class="list-item-link">vídeos</a></li>
+                                    <li class="navbar-main-list-item default"><a href="#" class="list-item-link">app g1</a></li>
+                                    <li class="navbar-main-list-item default"><a href="#" class="list-item-link">fale conosco</a></li>
+                                    <li class="navbar-main-list-item default"><a href="#" class="list-item-link">princípios editoriais</a></li>
+                                    <li class="navbar-main-list-item default"><a href="#" class="list-item-link">grupo globo</a></li>
+
                                     <li class="navbar-main-list-item highlighted"><a href="#" class="list-item-link">febre amarela</a></li>
+                                    <li class="navbar-main-list-item highlighted"><a href="#" class="list-item-link">lollapalooza</a></li>
+                                    <li class="navbar-main-list-item highlighted"><a href="#" class="list-item-link">operação lava jato</a></li>
                                 </ul>
                             </div>
                             <div class="navmap">
