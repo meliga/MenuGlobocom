@@ -174,7 +174,6 @@
     .navbar-main-sublist-item{
         color: #515151;
         border-left: 3px solid transparent;
-        padding-left: 20px;
 
     }
 
@@ -231,6 +230,8 @@
     .list-item-link,
     .sublist-item-link{
         display: block;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     /* ul li a > div */
@@ -268,6 +269,11 @@
     /* ul li a > div ul */
     .navbar-main-sublist{
         line-height: 25px;
+        width: 100%;
+    }
+
+    .multi-column .navbar-main-sublist{
+        width: auto;
     }
 
     /* ul li a > div ul li*/
@@ -306,7 +312,7 @@
     }
 
     .multi-column ul.sublevel:nth-child(n+3){
-        margin-left: 20px;
+        margin-left: 10px;
     }
 
     /* ul li a > div ul li a > div ul li*/
