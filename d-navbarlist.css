@@ -107,7 +107,7 @@ header{
     -webkit-border-radius: 3px;
     transition: opacity 300ms ease-out;
     opacity: 0; /* esse valor deverá ser zero */
-    display: block;
+    display: none;
     z-index: 9999;
 
 }
@@ -127,6 +127,7 @@ header{
 /* show navbar content */
 .navbar-main:hover > .navbar-main-content{
     opacity: 1;
+    display: block;
 }
 
 .navbar-main-cascade{
