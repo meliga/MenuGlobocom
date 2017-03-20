@@ -34,6 +34,10 @@
         padding: 27px 25px 23px;
         width: 265px;
     }
+
+    #map-br{
+        margin-top: 15px;
+    }
     </style>
     <link rel="stylesheet" type="text/css" href="d-navbarlist.css">
 </head>
@@ -292,6 +296,19 @@
                             </div>
                             <div class="navmap">
                                 <h3 class="navbar-main-list-title">notícias da sua região</h3>
+                                <img id="map-br" src="map-br-small.png" width="250" height="265" border="0" usemap="#Map"/>
+                                <map name="Map" id="Map">
+                                    <area id="sul" class="regiao region-trigger" shape="poly" coords="123.705,193.828 128.163,196.138 127.601,204.472 117.466,211.85 108.109,221.656 115.61,228.751
+                                        131.923,238.958 129.41,242.98 131.924,241.783 132.59,236.805 144.89,228.165 148.01,219.825 155.029,213.346 157.01,208.006
+                                        155.93,196.786 160.962,193.044 158.029,189.684 156.59,189 154.057,189.003 152.991,185.94 150.89,184.672 150.949,180.35
+                                        149.51,178.98 148.439,178 144.198,178 142.79,177 137.915,177 134.449,176.484 132.276,175.929 129.812,177.06 128.182,178.502
+                                        126.703,180.457 125.511,183.007" href="#"/>
+                                    <text text-anchor="middle" class="region-trigger label label-sul" id="label-sul" x="138" y="217" data-region="sul">
+                                        Sul
+                                    </text>
+                                </map>
+                                <img src="http://s.glbimg.com/jo/g1/static/live/menu_web_mosaico_g1/img/mapa-pin.png" class="region-trigger label label-sul" x="133" y="197" width="9" height="11" data-region="sul"/>
+
                             </div>
                         </div>
                     </nav>
