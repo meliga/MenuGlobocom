@@ -106,8 +106,8 @@ header{
     border-radius: 3px;
     -webkit-border-radius: 3px;
     transition: opacity 300ms ease-out;
-    opacity: 0; /* esse valor deverá ser zero */
-    display: none;
+    opacity: 1; /* esse valor deverá ser zero */
+    display: block; /* esse valor deverá ser none */
     z-index: 9999;
 
 }
