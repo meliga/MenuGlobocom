@@ -1,0 +1,28 @@
+/* Image Map */
+.navmap-image{
+    margin-top: 15px;
+}
+
+#mosaic-map-svg text{
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #333333;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+
+#mosaic-map-svg polygon{
+    cursor: pointer;
+}
+
+#mosaic-map-svg .region-trigger:hover g path,
+#mosaic-map-svg .region-trigger:hover g image,
+#mosaic-map-svg .region-trigger:hover g text{
+    opacity: 0.3;
+}
+#mosaic-map-svg .region-trigger:hover g:hover path,
+#mosaic-map-svg .region-trigger:hover g:hover image,
+#mosaic-map-svg .region-trigger:hover g:hover text{
+    opacity: 1;
+}
