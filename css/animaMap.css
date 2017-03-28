@@ -1,3 +1,32 @@
+/* Menu Map */
+.navbar-main-map{
+    height: 433px;
+    width: 265px;
+    border-left: 1px solid #ddd;
+    background: #f5f5f5;
+    padding: 27px 25px 23px;
+    float: left;
+    transition: width 300ms ease-out;
+}
+.navbar-main-map .navbar-map-list-item{
+    display: none;
+}
+.navbar-main-map .list-item-link{
+    padding-left: 0;
+    margin-bottom: 20px;
+
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #444;
+    letter-spacing: -.03em;
+    -webkit-font-smoothing: antialiased;
+
+    cursor: default;
+    display: block;
+}
+
+
 /* Image Map */
 .navbar-map-image{
     margin-top: 15px;
