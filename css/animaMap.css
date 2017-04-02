@@ -11,6 +11,7 @@
 .navbar-main-map .navbar-map-list-item{
     display: none;
 }
+
 .navbar-main-map .list-item-link{
     padding-left: 0;
     margin-bottom: 20px;
@@ -34,9 +35,28 @@
     font-weight: 600;
     color: #444;
 }
+
+.navbar-main-map .back{
+    position: absolute;
+    bottom: 25px;
+    padding-left: 0px;
+
+}
+.navbar-main-map .back:before{
+    color: #a80000;
+    content: '\2039';
+    font-size: 16px;
+    margin-right: 6px;
+}
+
+.navbar-main-map .back:active{
+   display: none;
+}
+
 .estados {
     background: url(http://s.glbimg.com/jo/g1/static/live/menu_web_mosaico_g1/img/brasil-estados.png) no-repeat top left;
 }
+
 .parana {
     background-position: 0px -504px;
 }
