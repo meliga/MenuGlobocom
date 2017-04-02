@@ -26,6 +26,28 @@
     display: block;
 }
 
+.navbar-main-map .sublist-item-link {
+    cursor: pointer;
+    padding-left: 40px;
+    width: 154px;
+    text-transform: none;
+    font-weight: 600;
+    color: #444;
+}
+.estados {
+    background: url(http://s.glbimg.com/jo/g1/static/live/menu_web_mosaico_g1/img/brasil-estados.png) no-repeat top left;
+}
+.parana {
+    background-position: 0px -504px;
+}
+
+.rio-grande-do-sul {
+    background-position: 0px -654px;
+}
+
+.santa-catarina {
+    background-position: 0px -684px;
+}
 
 /* Image Map */
 .navbar-map-image{
