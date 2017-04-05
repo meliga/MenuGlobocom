@@ -2,7 +2,8 @@
  * Created by diedromeliga on 19/03/17.
  */
 var dropdown = document.querySelectorAll(".dropdown");
-var dropdownMultiCollumn = document.querySelectorAll(".dropdown-multi-column")
+var dropdownMultiCollumn = document.querySelectorAll(".dropdown-multi-column");
+var dropdownMap = document.querySelectorAll(".dropdown-map");
 
 var getContextMenuWidth = function(contextMenu) {
 
@@ -28,8 +29,6 @@ var retractMenu = function(contextMenu) {
 var adcionarEventosMouse = function (item) {
     var cascadeMenu = document.querySelector(".navbar-main-cascade");
 
-    console.log(cascadeMenu.style.width);
-
     item.addEventListener("mouseover", function(){
         expandMenu(cascadeMenu);
     });
@@ -37,7 +36,23 @@ var adcionarEventosMouse = function (item) {
     item.addEventListener("mouseout", function(){
         retractMenu(cascadeMenu);
     });
+
 };
+
+var adcionarEventosMouseMap = function (item) {
+    var mapMenu = document.querySelector(".navbar-main-map");
+
+    item.addEventListener("mouseover", function(){
+        expandMenu(mapMenu);
+    });
+
+    item.addEventListener("mouseout", function(){
+        retractMenu(mapMenu);
+    });
+
+};
+
 
 dropdown.forEach(adcionarEventosMouse);
 dropdownMultiCollumn.forEach(adcionarEventosMouse);
+dropdownMap.forEach(adcionarEventosMouseMap);
