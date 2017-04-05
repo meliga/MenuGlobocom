@@ -26,33 +26,25 @@ var retractMenu = function(contextMenu) {
     contextMenu.style.width = currentWidth.toString() + "px";
 }
 
-var adcionarEventosMouse = function (item) {
-    var cascadeMenu = document.querySelector(".navbar-main-cascade");
+var adcionarEventosMouse = function (item, menu) {
 
     item.addEventListener("mouseover", function(){
-        expandMenu(cascadeMenu);
+        expandMenu(menu);
     });
 
     item.addEventListener("mouseout", function(){
-        retractMenu(cascadeMenu);
+        retractMenu(menu);
     });
-
 };
 
-var adcionarEventosMouseMap = function (item) {
-    var mapMenu = document.querySelector(".navbar-main-map");
-
-    item.addEventListener("mouseover", function(){
-        expandMenu(mapMenu);
-    });
-
-    item.addEventListener("mouseout", function(){
-        retractMenu(mapMenu);
-    });
-
+var cascadeMenu = function (item) {
+    adcionarEventosMouse(item, document.querySelector(".navbar-main-cascade"));
 };
 
+var mapMenu = function (item) {
+    adcionarEventosMouse(item, document.querySelector(".navbar-main-map"))
+};
 
-dropdown.forEach(adcionarEventosMouse);
-dropdownMultiCollumn.forEach(adcionarEventosMouse);
-dropdownMap.forEach(adcionarEventosMouseMap);
+dropdown.forEach(cascadeMenu);
+dropdownMultiCollumn.forEach(cascadeMenu);
+dropdownMap.forEach(mapMenu);
