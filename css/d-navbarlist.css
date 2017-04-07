@@ -162,7 +162,8 @@ header{
     display: none;
 }
 
-.navbar-main-list-item:hover .navbar-main-list-content{
+.navbar-main-list-item:hover .navbar-main-list-content,
+.navbar-map-sublist-item:hover .navbar-main-list-content {
     display: block;
 }
 
