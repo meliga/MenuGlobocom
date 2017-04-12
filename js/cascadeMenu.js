@@ -48,3 +48,26 @@ var mapMenu = function (item) {
 dropdown.forEach(cascadeMenu);
 dropdownMultiCollumn.forEach(cascadeMenu);
 dropdownMap.forEach(mapMenu);
+
+
+
+var region = document.querySelector("#sul");
+var regionClick = function () {
+    document.querySelector(".navbar-map-image").style.display = "none";
+    document.querySelector(".sul").style.display = "block";
+}
+
+region.addEventListener('click', function () {
+    regionClick();
+})
+
+
+var regionBack = document.querySelector(".back");
+var regionBackClick = function () {
+    document.querySelector(".navbar-map-image").style.display = "block";
+    document.querySelector(".navbar-map-list-item").style.display = "none";
+}
+
+regionBack.addEventListener('click', function () {
+    regionBackClick();
+})

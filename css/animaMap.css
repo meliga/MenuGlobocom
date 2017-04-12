@@ -67,7 +67,6 @@
     display: none;
 }
 
-
 .navbar-main-map .list-item-link{
     padding-left: 0;
     margin-bottom: 20px;
@@ -113,9 +112,6 @@
     margin-right: 6px;
 }
 
-.navbar-main-map .back:active{
-   display: none;
-}
 
 .estados {
     background: url(http://s.glbimg.com/jo/g1/static/live/menu_web_mosaico_g1/img/brasil-estados.png) no-repeat top left;
