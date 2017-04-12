@@ -1,5 +1,5 @@
 /* Menu Map */
-.navbar-main-map{
+.navbar-map{
     height: 433px;
     min-width: 200px; /* esse valor deve iniciar em 200px */
     border-left: 1px solid #ddd;
@@ -9,14 +9,48 @@
     transition: width 200ms ease-out;
 }
 
+.map-list-state{
+    position: relative;
+    height: 400px;
+    width: 200px;
+    font-size: 90%;
+    line-height: 28px;
+    color: #666;
+    padding: 20px 0 30px;
+    z-index: 1;
+}
+.dropdown-map:hover{
+    background: #ffffff;
+}
+
+.dropdown-map:hover:after,
+.dropdown-map:hover:before{
+    position: absolute;
+    content: "";
+    left: 100%;
+    margin-left: 0px;
+    margin-top: -28px;
+    border-top: 14px solid transparent;
+    border-left: 14px solid #ffffff;
+    border-bottom: 14px solid transparent;
+    z-index: 9999;
+}
+
+.dropdown-map:hover:before {
+    margin-top: -1px;
+    border-top: 15px solid transparent;
+    border-left: 15px solid #ddd;
+    border-bottom: 15px solid transparent;
+}
+
 .navbar-map-sublist-content{
     position: absolute;
     width: 200px;
-    height: 415px;
-    top: 65px;
-    margin-left: 190px;
+    height: 388px;
+    top: 68px;
+    margin-left: 200px;
     border-left: 1px solid #ddd;
-    padding: 5px 20px 0px;
+    padding: 0px 25px 0px;
     opacity: 0;
     transition: opacity 300ms;
     visibility: hidden; /* Esse valor deve iniciar como 'hidden' */
@@ -27,12 +61,12 @@
     visibility: visible;
 }
 
-.navbar-main-map .navbar-map-list-item{
+.navbar-map .navbar-map-list-item{
     display: none;
 }
 
 
-.navbar-main-map .list-item-link{
+.navbar-map .list-item-link{
     padding-left: 0;
     margin-bottom: 20px;
 
@@ -47,7 +81,7 @@
     display: block;
 }
 
-.navbar-main-map .sublist-item-link {
+.navbar-map-sublist .sublist-item-link {
     cursor: pointer;
     padding-left: 40px;
     width: 154px;
@@ -58,20 +92,20 @@
 
 
 
-.navbar-main-map .back{
+.navbar-map .back{
     position: absolute;
     bottom: 25px;
     padding-left: 0px;
 
 }
-.navbar-main-map .back:before{
+.navbar-map .back:before{
     color: #a80000;
     content: '\2039';
     font-size: 16px;
     margin-right: 6px;
 }
 
-.navbar-main-map .back:active{
+.navbar-map .back:active{
    display: none;
 }
 
@@ -80,15 +114,15 @@
 }
 
 .parana {
-    background-position: 0px -504px;
+    background-position: 5px -504px;
 }
 
 .rio-grande-do-sul {
-    background-position: 0px -654px;
+    background-position: 5px -654px;
 }
 
 .santa-catarina {
-    background-position: 0px -684px;
+    background-position: 5px -684px;
 }
 
 /* Image Map */

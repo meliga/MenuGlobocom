@@ -42,7 +42,7 @@ var cascadeMenu = function (item) {
 };
 
 var mapMenu = function (item) {
-    adcionarEventosMouse(item, document.querySelector(".navbar-main-map"))
+    adcionarEventosMouse(item, document.querySelector(".navbar-map"))
 };
 
 dropdown.forEach(cascadeMenu);
