@@ -1,5 +1,5 @@
 /* Menu Map */
-.navbar-map{
+.navbar-main-map{
     height: 433px;
     min-width: 200px; /* esse valor deve iniciar em 200px */
     border-left: 1px solid #ddd;
@@ -9,7 +9,7 @@
     transition: width 200ms ease-out;
 }
 
-.map-list-state{
+.navbar-map-list{
     position: relative;
     height: 400px;
     width: 200px;
@@ -61,12 +61,12 @@
     visibility: visible;
 }
 
-.navbar-map .navbar-map-list-item{
+.navbar-main-map .navbar-map-list-item{
     display: none;
 }
 
 
-.navbar-map .list-item-link{
+.navbar-main-map .list-item-link{
     padding-left: 0;
     margin-bottom: 20px;
 
@@ -92,20 +92,20 @@
 
 
 
-.navbar-map .back{
+.navbar-main-map .back{
     position: absolute;
     bottom: 25px;
     padding-left: 0px;
 
 }
-.navbar-map .back:before{
+.navbar-main-map .back:before{
     color: #a80000;
     content: '\2039';
     font-size: 16px;
     margin-right: 6px;
 }
 
-.navbar-map .back:active{
+.navbar-main-map .back:active{
    display: none;
 }
 
