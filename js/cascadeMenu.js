@@ -66,10 +66,10 @@ region.addEventListener('click', function () {
 var regionBack = document.querySelectorAll(".back");
 var regionBackEvent = function (item) {
     item.addEventListener("click", function(){
-        var regionLinks = document.querySelectorAll(".navbar-map-list-item"), i;
-        for (i = 0; i < regionLinks.length; ++i) {
-            regionLinks[i].style.display = "none";
-        }
+        var regionLinks = document.querySelectorAll(".navbar-map-list-item");
+        regionLinks.forEach(function (item) {
+            item.style.display = "none";
+        })
 
         document.querySelector(".navbar-map-image").style.display = "block";
         document.querySelector(".navbar-main-map").style.width = "250px";
