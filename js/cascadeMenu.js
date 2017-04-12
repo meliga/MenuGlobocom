@@ -55,6 +55,7 @@ var region = document.querySelector("#sul");
 var regionClick = function () {
     document.querySelector(".navbar-map-image").style.display = "none";
     document.querySelector(".sul").style.display = "block";
+    document.querySelector(".navbar-main-map").style.width = "200px";
 }
 
 region.addEventListener('click', function () {
@@ -62,12 +63,18 @@ region.addEventListener('click', function () {
 })
 
 
-var regionBack = document.querySelector(".back");
-var regionBackClick = function () {
-    document.querySelector(".navbar-map-image").style.display = "block";
-    document.querySelector(".navbar-map-list-item").style.display = "none";
-}
+var regionBack = document.querySelectorAll(".back");
+var regionBackEvent = function (item) {
+    item.addEventListener("click", function(){
+        var regionLinks = document.querySelectorAll(".navbar-map-list-item"), i;
+        for (i = 0; i < regionLinks.length; ++i) {
+            regionLinks[i].style.display = "none";
+        }
 
-regionBack.addEventListener('click', function () {
-    regionBackClick();
-})
+        document.querySelector(".navbar-map-image").style.display = "block";
+        document.querySelector(".navbar-main-map").style.width = "250px";
+    });
+
+};
+
+regionBack.forEach(regionBackEvent);

@@ -10,7 +10,9 @@
     float: left;
     transition: width 200ms ease-out;
 }
-
+.navbar-map-image{
+    width: 250px;
+}
 .navbar-map-list{
     position: relative;
     height: 400px;
