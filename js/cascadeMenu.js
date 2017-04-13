@@ -49,18 +49,18 @@ dropdown.forEach(cascadeMenu);
 dropdownMultiCollumn.forEach(cascadeMenu);
 dropdownMap.forEach(mapMenu);
 
-
-
-var region = document.querySelector("#sul");
-var regionClick = function () {
+var regiaoClick = function (regiao) {
     document.querySelector(".navbar-map-image").style.display = "none";
-    document.querySelector(".sul").style.display = "block";
+    document.querySelector("li." + regiao).style.display = "block";
     document.querySelector(".navbar-main-map").style.width = "200px";
 }
 
-region.addEventListener('click', function () {
-    regionClick();
-})
+var region = document.querySelectorAll(".region-trigger");
+region.forEach(function (item) {
+    item.addEventListener('click', function () {
+        regiaoClick(item.id);
+    });
+});
 
 
 var regionBack = document.querySelectorAll(".back");
