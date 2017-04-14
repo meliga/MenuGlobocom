@@ -107,7 +107,7 @@ header{
     -webkit-border-radius: 3px;
     transition: opacity 300ms ease-out;
     opacity: 1; /* esse valor deverá ser zero */
-    display: block; /* esse valor deverá ser none */
+    display: none; /* esse valor deverá ser none */
     z-index: 9999;
 
 }
@@ -162,12 +162,34 @@ header{
     display: none;
 }
 
+.navbar-main-list-item:first-child .navbar-main-list-content{
+    display: block;
+}
+
 .navbar-main-list-item:hover .navbar-main-list-content,
 .navbar-map-sublist-item:hover .navbar-main-list-content {
     display: block;
 }
 
 /* ul li */
+.default-open{
+    color: #C4170C;
+    background: #f5f5f5;
+    border-left: 3px solid #C4170C;
+}
+
+.default-open:after{
+    position: absolute;
+    content: "";
+    left: 100%;
+    margin-left: -1px;
+    margin-top: -28px;
+    border-top: 14px solid transparent;
+    border-left: 14px solid #f5f5f5;
+    border-bottom: 14px solid transparent;
+    z-index: 9999;
+}
+
 .navbar-main-list-item:hover,
 .navbar-main-sublist-item:hover{
     color: #C4170C;

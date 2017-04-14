@@ -1,6 +1,7 @@
 /**
  * Created by diedromeliga on 19/03/17.
  */
+var menuOpen = document.querySelectorAll(".navbar-main-button");
 var dropdown = document.querySelectorAll(".dropdown");
 var dropdownMultiCollumn = document.querySelectorAll(".dropdown-multi-column");
 var dropdownMap = document.querySelectorAll(".dropdown-map");
@@ -45,9 +46,22 @@ var mapMenu = function (item) {
     adcionarEventosMouse(item, document.querySelector(".navbar-main-map"))
 };
 
+menuOpen.forEach(cascadeMenu);
 dropdown.forEach(cascadeMenu);
 dropdownMultiCollumn.forEach(cascadeMenu);
 dropdownMap.forEach(mapMenu);
+
+menuOpen.forEach(function (item) {
+    item.addEventListener('mouseover', function () {
+        dropdown[0].classList.add("default-open");
+    });
+});
+
+dropdown.forEach(function (item) {
+    item.addEventListener('mouseover', function () {
+        item.classList.remove("default-open")
+    });
+});
 
 var regiaoClick = function (regiao) {
     document.querySelector(".navbar-map-image").style.display = "none";
