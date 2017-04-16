@@ -15,12 +15,12 @@
 }
 .navbar-map-list{
     position: relative;
-    height: 400px;
+    height: 430px;
     width: 200px;
     font-size: 90%;
     line-height: 28px;
     color: #666;
-    padding: 20px 0 30px;
+    padding: 0px 0 20px;
     z-index: 1;
 }
 .dropdown-map:hover{
@@ -50,8 +50,8 @@
 .navbar-map-sublist-content{
     position: absolute;
     width: 200px;
-    height: 388px;
-    top: 68px;
+    height: 405px;
+    top: 50px;
     margin-left: 200px;
     border-left: 1px solid #ddd;
     padding: 0px 25px 0px;
@@ -71,7 +71,7 @@
 
 .navbar-main-map .list-item-link{
     padding-left: 0;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 
     font-size: 17px;
     font-weight: 600;
@@ -87,7 +87,7 @@
 .navbar-map-sublist .sublist-item-link {
     cursor: pointer;
     padding-left: 40px;
-    width: 154px;
+    width: 200px;
     text-transform: none;
     font-weight: 600;
     color: #444;
@@ -98,12 +98,15 @@
     font-weight: 400;
     font-size: 14px;
     color: #666;
+    line-height: 26px;
 }
 
 .navbar-main-map .back{
     position: absolute;
     bottom: 25px;
     padding-left: 0px;
+    font-weight: 600;
+    color: #151515;
 
 }
 .navbar-main-map .back:before{
