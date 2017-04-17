@@ -121,6 +121,7 @@
     background: url(http://s.glbimg.com/jo/g1/static/live/menu_web_mosaico_g1/img/brasil-estados.png) no-repeat top left;
 }
 
+/* Sul */
 .parana {
     background-position: 5px -504px;
 }
@@ -131,6 +132,104 @@
 
 .santa-catarina {
     background-position: 5px -684px;
+}
+
+/* Sudeste */
+.espirito-santo{
+    background-position: 5px -204px;
+}
+
+.minas-gerais {
+    background-position: 5px -294px;
+}
+
+.rio-de-janeiro {
+    background-position: 5px -534px;
+}
+
+.sao-paulo {
+    background-position: 5px -744px;
+}
+/* Centro-oeste */
+.distrito-federal {
+    background-position: 5px -174px;
+}
+
+.goias {
+    background-position: 5px -234px;
+}
+
+.mato-grosso {
+    background-position: 5px -354px;
+}
+.mato-grosso-do-sul {
+    background-position: 5px -324px;
+}
+
+/* Nordeste */
+.alagoas {
+    background-position: 5px -24px;
+}
+
+.bahia {
+    background-position: 5px -114px;
+}
+
+.ceara {
+    background-position: 5px -144px;
+}
+
+.maranhao {
+    background-position: 5px -264px;
+}
+
+.paraiba {
+    background-position: 5px -414px;
+}
+
+.pernambuco {
+    background-position: 5px -444px;
+}
+
+.piaui {
+    background-position: 5px -474px;
+}
+
+.rio-grande-do-norte {
+    background-position: 5px -564px;
+}
+
+.sergipe {
+    background-position: 5px -714px;
+}
+
+/* Norte */
+.acre {
+    background-position: 5px 6px;
+}
+
+.amapa {
+    background-position: 5px -84px;
+}
+
+.amazonas {
+    background-position: 5px -54px;
+}
+
+.para {
+    background-position: 5px -384px;
+}
+
+.rondonia {
+    background-position: 5px -594px;
+}
+
+.roraima {
+    background-position: 5px -624px;
+}
+
+.tocantins {
+    background-position: 5px -774px;
 }
 
 /* Image Map */
