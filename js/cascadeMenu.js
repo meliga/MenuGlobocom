@@ -51,21 +51,6 @@ dropdown.forEach(cascadeMenu);
 dropdownMultiCollumn.forEach(cascadeMenu);
 dropdownMap.forEach(mapMenu);
 
-
-
-// TESTES
-var cascadeArea = document.querySelector(".navbar-main-cascade");
-cascadeArea.addEventListener('mouseover', function () {
-        var width = document.querySelector(".navbar-main-cascade").style.width;
-        var mapArea = document.querySelector(".navbar-main-map");
-        mapArea.addEventListener('mouseover', function () {
-            cascadeArea.style.width = width ;
-            //console.log(cascadeArea);
-        });
-        console.log(width);
-});
-// TESTES
-
 menuOpen.forEach(function (item) {
     item.addEventListener('mouseover', function () {
         dropdown[0].classList.add("default-open");
