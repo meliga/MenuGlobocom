@@ -96,3 +96,6 @@ ENV/
 
 # Node.js #
 node_modules
+
+# css/ - arquivos .css e .min.css #
+css/
