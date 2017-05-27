@@ -1,0 +1,22 @@
+{
+  "name": "MenuGlobocom",
+  "version": "1.0.0",
+  "description": "Config Gulp Menu Globo.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/meliga/MenuGlobocom.git"
+  },
+  "author": "Diedro Meliga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meliga/MenuGlobocom/issues"
+  },
+  "homepage": "https://github.com/meliga/MenuGlobocom",
+  "devDependencies": {
+    "gulp": "~3.9.1"
+  }
+}

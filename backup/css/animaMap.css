@@ -1,0 +1,262 @@
+/* Menu Map */
+.navbar-main-map{
+    height: 433px;
+    min-width: 200px; /* esse valor deve iniciar em 200px */
+    border-left: 1px solid #ddd;
+    background: #f5f5f5;
+    padding: 27px 25px 23px;
+    border-radius: 0px 3px 3px 0px;
+    -webkit-radius: 0px 3px 3px 0px;
+    float: left;
+    transition: width 200ms ease-out;
+}
+.navbar-map-image{
+    width: 250px;
+}
+.navbar-map-list{
+    position: relative;
+    height: 430px;
+    width: 200px;
+    font-size: 90%;
+    line-height: 28px;
+    color: #666;
+    padding: 0px 0 20px;
+    z-index: 1;
+}
+.dropdown-map:hover{
+    background: #ffffff;
+}
+
+.dropdown-map:hover:after,
+.dropdown-map:hover:before{
+    position: absolute;
+    content: "";
+    left: 100%;
+    margin-left: 0px;
+    margin-top: -28px;
+    border-top: 14px solid transparent;
+    border-left: 14px solid #ffffff;
+    border-bottom: 14px solid transparent;
+    z-index: 9999;
+}
+
+.dropdown-map:hover:before {
+    margin-top: -1px;
+    border-top: 15px solid transparent;
+    border-left: 15px solid #ddd;
+    border-bottom: 15px solid transparent;
+}
+
+.navbar-map-sublist-content{
+    position: absolute;
+    width: 200px;
+    height: 405px;
+    top: 50px;
+    margin-left: 200px;
+    border-left: 1px solid #ddd;
+    padding: 0px 25px 0px;
+    opacity: 0;
+    transition: opacity 300ms;
+    visibility: hidden; /* Esse valor deve iniciar como 'hidden' */
+}
+
+.navbar-map-sublist-item:hover .navbar-map-sublist-content{
+    opacity: 1;
+    visibility: visible;
+}
+
+.navbar-main-map .navbar-map-list-item{
+    display: none;
+}
+
+.navbar-main-map .list-item-link{
+    padding-left: 0;
+    margin-bottom: 15px;
+
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #444;
+    letter-spacing: -.03em;
+    -webkit-font-smoothing: antialiased;
+
+    cursor: default;
+    display: block;
+}
+
+.navbar-map-sublist .sublist-item-link {
+    cursor: pointer;
+    padding-left: 40px;
+    width: 200px;
+    text-transform: none;
+    font-weight: 600;
+    color: #444;
+}
+
+.navbar-map-sublist-content .sublevel .sublist-item-link {
+    padding-left: 0px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #666;
+    line-height: 26px;
+}
+
+.navbar-main-map .back{
+    position: absolute;
+    bottom: 25px;
+    padding-left: 0px;
+    font-weight: 600;
+    color: #151515;
+
+}
+.navbar-main-map .back:before{
+    color: #a80000;
+    content: '\2039';
+    font-size: 16px;
+    margin-right: 6px;
+}
+
+
+.estados {
+    background: url(http://s.glbimg.com/jo/g1/static/live/menu_web_mosaico_g1/img/brasil-estados.png) no-repeat top left;
+}
+
+/* Sul */
+.parana {
+    background-position: 5px -504px;
+}
+
+.rio-grande-do-sul {
+    background-position: 5px -654px;
+}
+
+.santa-catarina {
+    background-position: 5px -684px;
+}
+
+/* Sudeste */
+.espirito-santo{
+    background-position: 5px -204px;
+}
+
+.minas-gerais {
+    background-position: 5px -294px;
+}
+
+.rio-de-janeiro {
+    background-position: 5px -534px;
+}
+
+.sao-paulo {
+    background-position: 5px -744px;
+}
+/* Centro-oeste */
+.distrito-federal {
+    background-position: 5px -174px;
+}
+
+.goias {
+    background-position: 5px -234px;
+}
+
+.mato-grosso {
+    background-position: 5px -354px;
+}
+.mato-grosso-do-sul {
+    background-position: 5px -324px;
+}
+
+/* Nordeste */
+.alagoas {
+    background-position: 5px -24px;
+}
+
+.bahia {
+    background-position: 5px -114px;
+}
+
+.ceara {
+    background-position: 5px -144px;
+}
+
+.maranhao {
+    background-position: 5px -264px;
+}
+
+.paraiba {
+    background-position: 5px -414px;
+}
+
+.pernambuco {
+    background-position: 5px -444px;
+}
+
+.piaui {
+    background-position: 5px -474px;
+}
+
+.rio-grande-do-norte {
+    background-position: 5px -564px;
+}
+
+.sergipe {
+    background-position: 5px -714px;
+}
+
+/* Norte */
+.acre {
+    background-position: 5px 6px;
+}
+
+.amapa {
+    background-position: 5px -84px;
+}
+
+.amazonas {
+    background-position: 5px -54px;
+}
+
+.para {
+    background-position: 5px -384px;
+}
+
+.rondonia {
+    background-position: 5px -594px;
+}
+
+.roraima {
+    background-position: 5px -624px;
+}
+
+.tocantins {
+    background-position: 5px -774px;
+}
+
+/* Image Map */
+.navbar-map-image{
+    margin-top: 15px;
+}
+
+#mosaic-map-svg text{
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #333333;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+
+#mosaic-map-svg polygon{
+    cursor: pointer;
+}
+
+#mosaic-map-svg .brazil:hover g path,
+#mosaic-map-svg .brazil:hover g image,
+#mosaic-map-svg .brazil:hover g text{
+    opacity: 0.3;
+}
+#mosaic-map-svg .brazil:hover g:hover path,
+#mosaic-map-svg .brazil:hover g:hover image,
+#mosaic-map-svg .brazil:hover g:hover text{
+    opacity: 1;
+}

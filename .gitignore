@@ -93,3 +93,6 @@ ENV/
 #Folder .idea/ ----- Entender para que sever esta pasta
 .idea/
 .idea/
+
+# Node.js #
+node_modules
